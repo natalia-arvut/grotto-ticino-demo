@@ -52,9 +52,7 @@ tailwind.config = {
   .btn-gold:hover { background:#d9bd86; transform:translateY(-2px); box-shadow:0 14px 34px -12px #c4a06288; }
   .btn-ghost { border:1px solid #f6efe155; color:#f6efe1; transition:all .35s ease; }
   .btn-ghost:hover { border-color:#c4a062; color:#d9bd86; }
-  .hero-fade{ opacity:0; transform:translateY(20px); animation:heroIn .95s cubic-bezier(.16,1,.3,1) forwards; }
-  .hero-fade:nth-child(1){animation-delay:.05s}.hero-fade:nth-child(2){animation-delay:.18s}.hero-fade:nth-child(3){animation-delay:.32s}.hero-fade:nth-child(4){animation-delay:.46s}.hero-fade:nth-child(5){animation-delay:.6s}
-  @keyframes heroIn{to{opacity:1;transform:none}}
+  .hero-fade{ opacity:1; }
   @media(max-width:640px){ .hero-img{ object-position:78% 45% !important } }
   @media (prefers-reduced-motion: reduce){ .reveal,.hero-fade{opacity:1;transform:none;transition:none;animation:none} html{scroll-behavior:auto} .card-img{transition:none} }
 </style>
