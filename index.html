@@ -18,16 +18,16 @@ tailwind.config = {
         sans: ['"Hanken Grotesk"', 'system-ui', 'sans-serif'],
       },
       colors: {
-        espresso: '#19110a',
-        espresso2: '#251910',
+        espresso: '#152a20',
+        espresso2: '#1b3527',
         cream: '#f6efe1',
         cream2: '#efe5d2',
         merlot: '#6d1f2a',
-        merlotd: '#511620',
+        merlotd: '#521722',
         gold: '#c4a062',
         gold2: '#d9bd86',
         terra: '#b15a30',
-        ink: '#2a1f15',
+        ink: '#22281f',
       },
     },
   },
@@ -35,7 +35,7 @@ tailwind.config = {
 </script>
 <style>
   html { scroll-behavior: smooth; }
-  body { background:#19110a; }
+  body { background:#152a20; }
   ::selection { background:#c4a062; color:#19110a; }
   .kicker { letter-spacing:.34em; text-transform:uppercase; font-weight:600; font-size:.72rem; }
   .hairline { height:1px; background:linear-gradient(90deg,transparent,#c4a06255 18%,#c4a062aa 50%,#c4a06255 82%,transparent); }
@@ -71,9 +71,9 @@ tailwind.config = {
 </div>
 
 <header id="hdr" class="sticky top-0 z-50 transition-all duration-500">
-  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-[74px]">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-[86px]">
     <a href="#hero" class="flex items-center gap-3">
-      <img src="img/logo-cream.png" alt="Antico Grotto Ticino" class="h-7 w-auto" id="logo">
+      <img src="img/logo-cream.png" alt="Antico Grotto Ticino" class="h-11 md:h-12 w-auto" id="logo">
     </a>
     <nav class="hidden md:flex items-center gap-9 text-[.86rem] font-medium tracking-wide">
       <a href="#hero" class="nav-link hover:text-gold2 transition">Home</a>
@@ -87,10 +87,10 @@ tailwind.config = {
 </header>
 
 <!-- ============ HERO ============ -->
-<section id="hero" class="relative min-h-[calc(100svh-74px)] flex items-center overflow-hidden">
-  <img src="img/hero-terrazza.jpg" alt="La terrazza dell'Antico Grotto Ticino al tramonto" class="absolute inset-0 w-full h-full object-cover hero-img" style="object-position:60% 50%">
-  <div class="absolute inset-0" style="background:linear-gradient(90deg,#100a05 0%,#100a05f7 30%,#100a05cc 52%,#100a0555 74%,#100a0512 100%)"></div>
-  <div class="absolute inset-0" style="background:linear-gradient(0deg,#100a05ee 0%,#100a0533 30%,transparent 52%)"></div>
+<section id="hero" class="relative min-h-[calc(100svh-86px)] flex items-center overflow-hidden">
+  <img src="img/hero-terrazza.jpg" alt="La terrazza dell'Antico Grotto Ticino al tramonto" class="absolute inset-0 w-full h-full object-cover hero-img" style="object-position:55% 50%">
+  <div class="absolute inset-0" style="background:linear-gradient(90deg,#0c1810 0%,#0c1810ee 26%,#0c1810a8 46%,#0c181040 66%,transparent 84%)"></div>
+  <div class="absolute inset-0" style="background:linear-gradient(0deg,#0c1810d8 0%,#0c181018 26%,transparent 46%)"></div>
   <div class="relative max-w-7xl mx-auto px-6 w-full">
     <div class="max-w-2xl py-16">
       <p class="kicker text-gold2 hero-fade">Mendrisio · Ticino · Svizzera</p>
@@ -245,7 +245,9 @@ tailwind.config = {
 
 <!-- ============ MENU ============ -->
 <section id="menu" class="relative bg-espresso py-24 md:py-32 overflow-hidden">
-  <div class="absolute top-0 right-0 w-1/3 h-full opacity-[.07]" style="background:url('img/cantina.jpg') center/cover"></div>
+  <div class="absolute top-0 right-0 w-1/2 h-full hidden md:block" style="background:url('img/cantina.jpg') center/cover"></div>
+  <div class="absolute inset-0 hidden md:block" style="background:linear-gradient(90deg,#152a20 0%,#152a20 42%,#152a20cc 58%,#152a2055 78%,#152a2026 100%)"></div>
+  <div class="absolute inset-0 md:hidden" style="background:#152a20"></div>
   <div class="relative max-w-5xl mx-auto px-6">
     <div class="text-center reveal">
       <p class="kicker text-gold2">Un viaggio nella terra dei sapori</p>
@@ -348,7 +350,7 @@ tailwind.config = {
 <!-- ============ FOOTER ============ -->
 <footer class="bg-espresso border-t border-white/8 py-12">
   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-    <img src="img/logo-cream.png" alt="Antico Grotto Ticino" class="h-7 w-auto opacity-90">
+    <img src="img/logo-cream.png" alt="Antico Grotto Ticino" class="h-12 w-auto opacity-90">
     <p class="text-cream/45 text-[.82rem] text-center">Via alle Cantine 20 · 6850 Mendrisio · Ticino · Svizzera</p>
     <p class="text-cream/40 text-[.78rem]">© Antico Grotto Ticino · Tutti i diritti riservati</p>
   </div>
@@ -367,7 +369,7 @@ tailwind.config = {
   window.addEventListener('scroll',onScroll); onScroll();
 </script>
 <style>
-  #hdr.is-solid{ background:#19110aee; backdrop-filter:blur(10px); border-bottom:1px solid #ffffff12; box-shadow:0 10px 30px -18px #000; }
+  #hdr.is-solid{ background:#142619ee; backdrop-filter:blur(10px); border-bottom:1px solid #ffffff12; box-shadow:0 10px 30px -18px #000; }
 </style>
 </body>
 </html>
